@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: nerko one;
+    background-image: linear-gradient(to right, #87eed4, #3c6ffa);
+    color:#fff;
+    text-shadow: 1px 1px #bebcbc;
+    text-align: center;
+    padding-top: 30px;  
+}
+
+#tasksContainer{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* formulario */
+#tasksHeader{
+    margin-top: 40px;
+}
+
+#tasksForm{
+    position: relative;
+}
+
+#tasksForm input{
+    box-sizing: border-box;
+    border: 1px solid #ea86f3;
+    background: #fff;
+    color:#ea86f3;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#tasksForm input::placeholder{
+    color:#ea86f3;
+}
+
+#tasksForm input:focus{
+    outline: none;
+}
+
+#addBtn{
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ea86f3;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 54px;
+    top: 0;
+    right: 0;
+    padding-top: 3px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#tasksList i{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+#addBtn:hover{
+    background-color: #ea86f3;
+    color: #fff;
+}
+
+i{
+    font-size: 25px;
+    color: #ea86f3;
+}
+
+/* tarefas do formulário */
+
+#tasksList{
+    list-style: none;
+    padding-left: 0;
+}
+
+#tasksList li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: #ea86f3;
+    background-color: #fff;
+    color:#ea86f3;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+#tasksList li span{
+    font-size: 18px;
+}
+
+.doneBtn{
+    right: 40px;
+}
+
+.doneBtn:hover{
+    background-color:#f35f78;
+    color #fff;
+}
+
+.removeBtn{
+    right: 0;
+}
+
+.removeBtn:hover{
+    background-color: #f35f78;
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+
+#tasksList li.done{
+    background-color: #ea86f3;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+h2{
+    text-transform: uppercase;
+}
